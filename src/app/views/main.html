@@ -1,0 +1,47 @@
+<div class="jumbotron">
+  <h1>Welcome!</h1>
+</div>
+
+
+
+<!-- <div ng-controller="AlertCtrl">
+  <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+  <button class='btn btn-default' ng-click="addAlert()">Add Alert</button>
+</div>
+ -->
+
+<div ng-controller="ModalCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">VLC Player</h3>
+        </div>
+        <div class="modal-body">
+            <center><img src="images/vlc-player-icon.png" height="120px"></center><br>
+            <p>VLC ist ein freier und quelloffener Multimediaplayer sowie ein Framework für verschiedene Betriebssysteme, das die meisten Multimediadateien, sowie DVDs, Audio-CDs, VCDs und verschiedene Streamingprotokolle abspielt.</p>
+            <p><b>Ubuntu:</b><br>
+            <kbd>$ sudo apt-get install vlc</kbd>
+            <p><b>Fedora:</b><br>
+            <kbd>$ sudo yum install vlc</kbd>
+            <p><b>Arch:</b><br>
+            <kbd>$ sudo pacman -S vlc</kbd>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+        </div>
+    </script>
+
+    <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/windows-media-player-icon.png">
+      <div class="caption">
+        <h3>Windows Media Player</h3>
+        <p>Windows Media Player ist ein Computerprogramm, das zur Wiedergabe von Audio- und Videodateien dient. Windows Media Player ist, genau wie der Internet Explorer, ein fester Windows-Bestandteil.</p>
+        <p><center><button class="btn btn-primary" ng-click="open('lg')">Alternative</button></center></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
